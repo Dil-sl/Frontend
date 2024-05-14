@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Employee</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="create-employee-container">
+        <h1>Create New Employee</h1>
+        <form id="createEmployeeForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" required>
+                    <!-- Department options will be loaded here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="qualifications">Qualifications:</label>
+                <select id="qualifications" multiple required>
+                    <!-- Qualifications options will be loaded here -->
+                </select>
+            </div>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
